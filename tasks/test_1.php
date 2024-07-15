@@ -5,8 +5,9 @@
 /**
  * Вычисляет логарифм
  */
-function calculateFactorial(int $number): int { //лучше int факториал целое число
-    if ( $number <= 1) {
+function calculateFactorial(int $number): int
+{ //лучше int факториал целое число
+    if ($number <= 1) {
         return 1; //;
     } else {
         return $number * calculateFactorial($number - 1); // + на - изменил
@@ -16,7 +17,8 @@ function calculateFactorial(int $number): int { //лучше int фактори�
 /**
  * Проверяет, является ли число простым
  */
-function isPrime($num) {
+function isPrime($num)
+{
     if ($num <= 1) {
         return false;
     }
@@ -27,10 +29,11 @@ function isPrime($num) {
     }
     return true;
 }
+
 // Исправлены ' на "
 echo "Введите число: ";
 $number = readline();
-echo "Факториал $number is: ". calculateFactorial($number) . "\n"; // опечатка в переменной
+echo "Факториал $number is: " . calculateFactorial($number) . "\n"; // опечатка в переменной
 
 if (isPrime($number)) {
     echo "$number - это простое число.\n";

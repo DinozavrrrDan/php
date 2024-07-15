@@ -29,6 +29,7 @@ class Dog extends Animal // исправил написание Animal + зам�
     {
         return "Woof";
     }
+
     //Добавил геттер для получения имени
     public function getName()
     {
@@ -72,10 +73,10 @@ $rex = new Dog("Rex", "Labrador");
 $stooped = new Dog("Stooped");
 $murka = new Cat("Murka");
 
-echo $rex->getBreed() ." ". $rex->getName() . " says " . $rex->makeSound() . "\n"; // изменил вызов метода на makeSound
+echo $rex->getBreed() . " " . $rex->getName() . " says " . $rex->makeSound() . "\n"; // изменил вызов метода на makeSound
 // изменил вызов метода на makeSound + поменял Рекса на Ступту
-echo $stooped->getBreed() ." ". $stooped->getName() . " says " . $stooped->makeSound() . "\n";
-echo $murka->getName() . " " .$murka->getName() . " says " . $murka->makeSound() . "\n"; // изменил вызов метода на makeSound
+echo $stooped->getBreed() . " " . $stooped->getName() . " says " . $stooped->makeSound() . "\n";
+echo $murka->getName() . " " . $murka->getName() . " says " . $murka->makeSound() . "\n"; // изменил вызов метода на makeSound
 
 // Ожидаемый результат работы программы
 // Labrador Rex says Woof
